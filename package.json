@@ -4,8 +4,8 @@
   "description": "Multiplayer Testing",
   "main": "index.js",
   "scripts": {
-    "dev": "node server",
-    "start": "nodemon server"
+    "start": "node server",
+    "dev": "nodemon server"
   },
   "keywords": [],
   "author": "",
