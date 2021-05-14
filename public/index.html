@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Bitches</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="functions.js"></script>
+    <script src="app.js"></script>
+    <script src="game.js"></script>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+    <button onclick="showMenu()" id="menu-button">MENU</button>
+    <header class="player-profile">
+        <div>
+            <input type="text" id="name" name="name" value="New Player">
+            <label for="name">NAME</label>
+        </div>
+        <div>
+            <input type="text" name="color" id="color" value="#FFFFFF">
+            <label for="color">COLOR</label>
+        </div>
+        <div>
+            <input type="checkbox" name="ready" id="ready">
+            <label for="ready">READY</label>
+        </div>
+    </header>
+    <div id="lobby-people">
+        <table id="currtable">
+            <tbody>
+            </tbody>
+        </table>
+        <button onclick="askStartGame()" id="startButton">Start Game</button>
+    </div>
+    <div class="main-space">
+        <canvas id="main"></canvas>
+    </div>
+</body>
+
+</html>
