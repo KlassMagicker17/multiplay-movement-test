@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const http = require('http');
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 3000
 const socketio = require('socket.io');
 const { Socket } = require('dgram');
 const app = express();
